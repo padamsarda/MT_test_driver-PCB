@@ -488,6 +488,7 @@
         "wire_width": 12
       },
       {
+        "line_style": 0,
         "name": "I2C",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
@@ -495,6 +496,7 @@
         "wire_width": 12
       },
       {
+        "line_style": 0,
         "name": "SWD",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
@@ -515,20 +517,27 @@
         "wire_width": 12
       },
       {
+        "line_style": 0,
         "name": "motor_power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgb(255, 139, 0)",
+<<<<<<< HEAD
         "wire_width": 39
+=======
+        "wire_width": 12
+>>>>>>> d1ca10ab257a4d98f0035db4342d4e6c3a8f3578
       },
       {
+        "line_style": 0,
         "name": "power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgb(255, 7, 0)",
-        "wire_width": 20
+        "wire_width": 12
       },
       {
+        "line_style": 0,
         "name": "signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,

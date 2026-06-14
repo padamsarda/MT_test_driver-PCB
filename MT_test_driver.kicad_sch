@@ -6147,7 +6147,7 @@
 	)
 	(rectangle
 		(start 113.03 21.59)
-		(end 181.61 152.4)
+		(end 189.23 152.4)
 		(stroke
 			(width 0)
 			(type dash_dot_dot)
@@ -6437,7 +6437,7 @@
 	)
 	(text "ESD prot "
 		(exclude_from_sim no)
-		(at 208.788 110.998 0)
+		(at 219.71 152.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6494,6 +6494,12 @@
 			)
 		)
 		(uuid "fce18ce0-fea3-4f22-b8a5-313c18a13c55")
+	)
+	(junction
+		(at 176.53 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "060d8867-9af5-4eb6-91ff-fcdc6e8611b1")
 	)
 	(junction
 		(at 91.44 177.8)
@@ -6692,6 +6698,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1536ce1-32d9-423b-92da-39cfa44289f5")
+	)
+	(junction
+		(at 172.72 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3602ae8-aaaf-44a1-b137-e4e3bf17e4db")
 	)
 	(junction
 		(at 142.24 39.37)
@@ -7907,6 +7919,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 110.49) (xy 172.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9715dd13-bde1-4cc2-b35b-794af23f494e")
+	)
+	(wire
+		(pts
 			(xy 142.24 39.37) (xy 142.24 41.91)
 		)
 		(stroke
@@ -8647,6 +8669,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 113.03) (xy 176.53 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa29794f-0652-4997-8319-d4d827c6cb47")
+	)
+	(wire
+		(pts
 			(xy 165.1 120.65) (xy 167.64 120.65)
 		)
 		(stroke
@@ -8846,7 +8878,7 @@
 		(uuid "837d98bb-d8e6-42fd-85b8-8868666719e1")
 	)
 	(label "I2C_SDA"
-		(at 166.37 110.49 0)
+		(at 180.34 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8936,7 +8968,7 @@
 		(uuid "b00ac1e5-7cf2-4f7a-a647-cc0ddfb45db7")
 	)
 	(label "I2C_SCL"
-		(at 166.37 113.03 0)
+		(at 180.34 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9872,7 +9904,7 @@
 			(uuid "8a18a471-af08-4072-ab05-b4519ef5db0e")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "D1")
 					(unit 1)
@@ -10008,7 +10040,7 @@
 			(uuid "c86d5062-ec1d-4c55-81f3-8f91ede153f6")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "U2")
 					(unit 1)
@@ -10663,7 +10695,7 @@
 			)
 		)
 		(property "Value" "DRV8871DDA"
-			(at 199.644 56.134 0)
+			(at 190.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10726,7 +10758,7 @@
 			(uuid "3af8508d-eb75-4a7b-ae29-2f28838bc270")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "U1")
 					(unit 1)
@@ -10863,7 +10895,7 @@
 			(uuid "eb8b8bd7-8bba-450b-b3f3-75f72c7af9e8")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "header_battery1")
 					(unit 1)
@@ -11229,7 +11261,7 @@
 			(uuid "3b859aec-97c7-443f-96b5-02021e0e8dc6")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "R3")
 					(unit 1)
@@ -11502,7 +11534,7 @@
 			(uuid "54145c94-9b89-46f1-8b1b-86fdc00fec20")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "MT1")
 					(unit 1)
@@ -11838,7 +11870,7 @@
 			(uuid "7600e27c-5bd2-47c5-a90e-4634b217eaac")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "#PWR036")
 					(unit 1)
@@ -12731,7 +12763,7 @@
 			(uuid "4dd24b70-90a8-4e8d-95b3-bdfebe022a9a")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "U4")
 					(unit 1)
@@ -12818,7 +12850,7 @@
 			(uuid "9648a43e-2eb3-41c9-adfa-f0d5ee2a8ab9")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "U3")
 					(unit 1)
@@ -13701,7 +13733,7 @@
 			(uuid "5da43193-6cfb-4bd8-a7ff-01eee3cbcd8c")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "J2")
 					(unit 1)
@@ -13901,7 +13933,7 @@
 			(uuid "96dc57c4-1d66-48c1-a76e-34e5a90019d9")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "#PWR05")
 					(unit 1)
@@ -14178,7 +14210,7 @@
 			(uuid "ac6f0de0-d478-4237-aa50-bbc1f5b11bad")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "J1")
 					(unit 1)
@@ -14245,7 +14277,7 @@
 			(uuid "04982cb9-0ab6-4a38-87fc-fe9537aae5ed")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "TP1")
 					(unit 1)
@@ -14743,7 +14775,7 @@
 			(uuid "09081a8b-0aed-42cb-8722-b10eff49a118")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "#PWR03")
 					(unit 1)
@@ -15578,7 +15610,7 @@
 			(uuid "5a4f83c6-adcc-4095-a569-48d38b841097")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "#FLG01")
 					(unit 1)
@@ -16319,7 +16351,7 @@
 			(uuid "42f1e4fc-22c7-47be-a53d-4a4a386eb70e")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "R8")
 					(unit 1)
@@ -16867,7 +16899,7 @@
 			(uuid "5b4a5e66-a436-4668-9e26-7e037a6dfd30")
 		)
 		(instances
-			(project ""
+			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "SW1")
 					(unit 1)
