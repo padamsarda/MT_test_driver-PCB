@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +186,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +215,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -477,42 +490,48 @@
       {
         "name": "I2C",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(216, 213, 0)",
         "wire_width": 12
       },
       {
         "name": "SWD",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(0, 14, 255)",
         "wire_width": 12
       },
       {
-        "name": "ground",
+        "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgb(193, 0, 255)"
+      },
+      {
+        "name": "ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgb(101, 100, 100)",
         "wire_width": 12
       },
       {
         "name": "motor_power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(255, 139, 0)",
-        "wire_width": 28
+        "wire_width": 39
       },
       {
         "name": "power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(255, 7, 0)",
         "wire_width": 20
       },
       {
         "name": "signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(0, 170, 5)",
         "wire_width": 12
       }
@@ -540,10 +559,18 @@
       "/NRST": [
         "signal"
       ],
+      "/USBR_D+": [
+        "USB"
+      ],
+      "/USBR_D-": [
+        "USB"
+      ],
       "/USB_D+": [
+        "USB",
         "signal"
       ],
       "/USB_D-": [
+        "USB",
         "signal"
       ],
       "Net-(C3-Pad1)": [
@@ -615,6 +642,14 @@
       {
         "netclass": "signal",
         "pattern": "/USBR_D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_D-"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/USB_D+"
       }
     ]
   },

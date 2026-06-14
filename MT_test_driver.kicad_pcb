@@ -544,7 +544,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "15831dbe-4b10-4392-8f77-aeacaa007932")
-		(at 129.6125 168.3)
+		(at 132.3875 164.95)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U5"
@@ -915,7 +915,7 @@
 	(footprint "Library:screwterminal_PHOENIX_1751248"
 		(layer "F.Cu")
 		(uuid "181c1a10-804a-45f1-8f1a-07140acb59ba")
-		(at 108.75 164.6)
+		(at 110.7875 170.4)
 		(property "Reference" "MT1"
 			(at 2.175 -9.185 0)
 			(layer "F.SilkS")
@@ -2205,10 +2205,10 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2ecf4adb-103a-49ce-b644-62c5a5b6b7f0")
-		(at 65.25 186.725)
+		(at 64.25 186.975)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
-		(property "Reference" "header_battery1"
+		(property "Reference" "J6"
 			(at 0 -2.38 0)
 			(layer "F.SilkS")
 			(uuid "93d76275-5d52-4255-b088-07f4e8b91b3c")
@@ -2219,10 +2219,9 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "header_battery"
 			(at 0 4.92 0)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "4dd1af9a-cb66-477e-b6ad-d26ec4c6577f")
 			(effects
 				(font
@@ -3981,7 +3980,7 @@
 	(footprint "Library:tactile switch 4.5_4.5"
 		(layer "F.Cu")
 		(uuid "4b4aae82-a140-47c6-906e-b2297e9d1876")
-		(at 88.625 179.25)
+		(at 93.45 179.25)
 		(property "Reference" "SW1"
 			(at 3.7 -5.1 0)
 			(unlocked yes)
@@ -5304,7 +5303,7 @@
 	(footprint "Library:tactile switch 4.5_4.5"
 		(layer "F.Cu")
 		(uuid "7176cf0f-e1cf-4536-833b-28a16cae7dbd")
-		(at 78.125 179.5)
+		(at 78.375 179.25)
 		(property "Reference" "SW2"
 			(at 3.7 -5.1 0)
 			(unlocked yes)
@@ -8115,7 +8114,7 @@
 	(footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering"
 		(layer "F.Cu")
 		(uuid "b464129f-09ab-45bc-9f7a-1fab74014bd6")
-		(at 168.3 164.9)
+		(at 166.2 165.65)
 		(descr "SMD3225/4, Crystal, 3.2x2.5mm package, SMD, hand-soldering, generated with kicad-footprint-generator make_crystal.py, http://www.txccrystal.com/images/pdf/7m-accuracy.pdf")
 		(property "Reference" "Y1"
 			(at 0 -3 0)
@@ -9562,7 +9561,7 @@
 	(footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm"
 		(layer "F.Cu")
 		(uuid "dabaa699-9246-470a-95cf-08288d8ee564")
-		(at 164 89)
+		(at 162.75 92.5)
 		(descr "LQFP, 64 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606_7606-6_7606-4.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "LQFP QFP")
 		(property "Reference" "U4"
