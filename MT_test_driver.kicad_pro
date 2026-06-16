@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 1.65,
-          "width": 1.65
+          "drill": 0.0,
+          "height": 0.6,
+          "width": 1.475
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -58,7 +58,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|134592500|75350000|eb9e5130-1736-427e-969e-eb1b4e62c20e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|164700000|115565000|c9df5a2e-716a-44aa-9c1c-02051b49005e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|173775000|91450000|4b4aae82-a140-47c6-906e-b2297e9d1876|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|178500000|82600000|7176cf0f-e1cf-4536-833b-28a16cae7dbd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|167427455|86610495|2d39cd5f-ee3b-42d4-83cb-3f3a7e9ce839|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -188,8 +209,10 @@
       ],
       "track_widths": [
         0.0,
+        0.0,
         0.3,
-        0.5
+        0.5,
+        0.8
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -221,6 +244,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.71,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false
@@ -490,10 +521,17 @@
         "wire_width": 6
       },
       {
+        "name": "CAN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 153, 214)",
+        "wire_width": 6
+      },
+      {
         "clearance": 0.15,
         "name": "I2C",
         "pcb_color": "rgb(216, 213, 0)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(216, 213, 0)",
         "track_width": 0.3,
         "via_diameter": 0.5,
@@ -503,7 +541,7 @@
         "clearance": 0.15,
         "name": "SWD",
         "pcb_color": "rgb(0, 14, 255)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 14, 255)",
         "track_width": 0.3,
         "via_diameter": 0.5,
@@ -512,7 +550,7 @@
       {
         "name": "USB",
         "pcb_color": "rgb(193, 0, 255)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(193, 0, 255)",
         "wire_width": 6
       },
@@ -520,7 +558,7 @@
         "clearance": 0.15,
         "name": "ground",
         "pcb_color": "rgb(101, 100, 100)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(101, 100, 100)",
         "track_width": 0.3,
         "via_diameter": 0.5,
@@ -530,7 +568,7 @@
         "clearance": 0.15,
         "name": "motor_power",
         "pcb_color": "rgb(255, 139, 0)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(255, 139, 0)",
         "track_width": 0.7,
         "via_diameter": 0.5,
@@ -540,7 +578,7 @@
         "clearance": 0.15,
         "name": "power",
         "pcb_color": "rgb(255, 7, 0)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(255, 7, 0)",
         "track_width": 0.5,
         "via_diameter": 0.5,
@@ -550,7 +588,7 @@
         "clearance": 0.15,
         "name": "signal",
         "pcb_color": "rgb(0, 170, 5)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgb(0, 170, 5)",
         "track_width": 0.3,
         "via_diameter": 0.5,
@@ -582,6 +620,18 @@
       ],
       "/BOOT0_sw": [
         "signal"
+      ],
+      "/CAN_H": [
+        "CAN"
+      ],
+      "/CAN_L": [
+        "CAN"
+      ],
+      "/CAN_RX": [
+        "CAN"
+      ],
+      "/CAN_TX": [
+        "CAN"
       ],
       "/NRST": [
         "signal"
