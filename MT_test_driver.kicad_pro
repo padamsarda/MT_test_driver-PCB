@@ -187,7 +187,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.3,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -443,7 +445,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -471,78 +473,88 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.1,
         "line_style": 0,
         "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_drill": 0.3,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 12
+        "track_width": 0.3,
+        "via_diameter": 0.5,
+        "via_drill": 0.6,
+        "wire_width": 6
       },
       {
-        "line_style": 0,
+        "clearance": 0.15,
         "name": "I2C",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(216, 213, 0)",
         "priority": 4,
         "schematic_color": "rgb(216, 213, 0)",
-        "wire_width": 12
+        "track_width": 0.3,
+        "via_diameter": 0.5,
+        "wire_width": 6
       },
       {
-        "line_style": 0,
+        "clearance": 0.15,
         "name": "SWD",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 14, 255)",
         "priority": 3,
         "schematic_color": "rgb(0, 14, 255)",
-        "wire_width": 12
+        "track_width": 0.3,
+        "via_diameter": 0.5,
+        "wire_width": 6
       },
       {
         "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(193, 0, 255)",
         "priority": 0,
-        "schematic_color": "rgb(193, 0, 255)"
+        "schematic_color": "rgb(193, 0, 255)",
+        "wire_width": 6
       },
       {
+        "clearance": 0.15,
         "name": "ground",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(101, 100, 100)",
         "priority": 1,
         "schematic_color": "rgb(101, 100, 100)",
-        "wire_width": 12
+        "track_width": 0.3,
+        "via_diameter": 0.5,
+        "wire_width": 6
       },
       {
-        "line_style": 0,
+        "clearance": 0.15,
         "name": "motor_power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 139, 0)",
         "priority": 2,
         "schematic_color": "rgb(255, 139, 0)",
-<<<<<<< HEAD
-        "wire_width": 39
-=======
-        "wire_width": 12
->>>>>>> d1ca10ab257a4d98f0035db4342d4e6c3a8f3578
+        "track_width": 0.7,
+        "via_diameter": 0.5,
+        "wire_width": 6
       },
       {
-        "line_style": 0,
+        "clearance": 0.15,
         "name": "power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 7, 0)",
         "priority": 5,
         "schematic_color": "rgb(255, 7, 0)",
-        "wire_width": 12
+        "track_width": 0.5,
+        "via_diameter": 0.5,
+        "wire_width": 6
       },
       {
-        "line_style": 0,
+        "clearance": 0.15,
         "name": "signal",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 170, 5)",
         "priority": 6,
         "schematic_color": "rgb(0, 170, 5)",
-        "wire_width": 12
+        "track_width": 0.3,
+        "via_diameter": 0.5,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -559,6 +571,12 @@
       "/ADC2_IN5": [
         "signal"
       ],
+      "/ADC3_IN2": [
+        "signal"
+      ],
+      "/ADC3_IN3": [
+        "signal"
+      ],
       "/BOOT0": [
         "signal"
       ],
@@ -568,18 +586,10 @@
       "/NRST": [
         "signal"
       ],
-      "/USBR_D+": [
-        "USB"
-      ],
-      "/USBR_D-": [
-        "USB"
-      ],
       "/USB_D+": [
-        "USB",
         "signal"
       ],
       "/USB_D-": [
-        "USB",
         "signal"
       ],
       "Net-(C3-Pad1)": [
@@ -659,6 +669,18 @@
       {
         "netclass": "power",
         "pattern": "/USB_D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USBR_D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USBR_D-"
       }
     ]
   },
@@ -775,6 +797,18 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Robu Link",
+          "name": "Robu Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field6",
+          "name": "Field6",
           "show": false
         }
       ],
