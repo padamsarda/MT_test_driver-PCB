@@ -7672,7 +7672,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 135.89) (xy 26.67 135.89)
+			(xy 29.21 135.89) (xy 26.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7742,16 +7742,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 138.43) (xy 26.67 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0aa80111-e77e-4948-ab00-e033785d0175")
-	)
-	(wire
-		(pts
 			(xy 201.93 38.1) (xy 195.58 38.1)
 		)
 		(stroke
@@ -7772,7 +7762,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 133.35) (xy 26.67 133.35)
+			(xy 29.21 138.43) (xy 26.67 138.43)
 		)
 		(stroke
 			(width 0)
@@ -8132,16 +8122,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 138.43) (xy 43.18 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4241620e-9f18-4eb6-8257-8399ce420e48")
-	)
-	(wire
-		(pts
 			(xy 168.91 116.84) (xy 168.91 118.11)
 		)
 		(stroke
@@ -8482,7 +8462,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 133.35) (xy 43.18 133.35)
+			(xy 45.72 138.43) (xy 43.18 138.43)
 		)
 		(stroke
 			(width 0)
@@ -8762,7 +8742,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 135.89) (xy 43.18 135.89)
+			(xy 45.72 135.89) (xy 43.18 135.89)
 		)
 		(stroke
 			(width 0)
@@ -9611,7 +9591,7 @@
 		(uuid "ff806d51-1579-4a22-9841-0009a8329efa")
 	)
 	(label "I2C_SDA"
-		(at 44.45 133.35 0)
+		(at 45.72 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9751,7 +9731,7 @@
 		(uuid "7b324da8-9752-47bb-8430-0efb0e927ca7")
 	)
 	(label "I2C_SDA"
-		(at 27.94 133.35 0)
+		(at 29.21 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9771,7 +9751,7 @@
 		(uuid "7fb8ac57-f91b-4f08-9521-e9170ffe49ad")
 	)
 	(label "I2C_SCL"
-		(at 27.94 135.89 0)
+		(at 29.21 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9921,7 +9901,7 @@
 		(uuid "b4e0e3a1-3af3-46f7-a873-602dc7ba2a2d")
 	)
 	(label "I2C_SCL"
-		(at 44.45 135.89 0)
+		(at 45.72 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13172,7 +13152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:screwterminal_PHOENIX_1751248"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 271.78 52.07 0)
 			(effects
 				(font
@@ -14733,7 +14713,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 138.43 0)
+		(at 43.18 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14742,7 +14722,7 @@
 		(fields_autoplaced yes)
 		(uuid "7abc0a4d-427b-4055-a74e-8b3ac11b9922")
 		(property "Reference" "#PWR040"
-			(at 44.45 144.78 0)
+			(at 49.53 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14751,7 +14731,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 143.51 0)
+			(at 48.26 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14760,7 +14740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 138.43 0)
+			(at 43.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14769,7 +14749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 138.43 0)
+			(at 43.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14778,7 +14758,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 138.43 0)
+			(at 43.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17828,7 +17808,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 138.43 0)
+		(at 26.67 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17837,7 +17817,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc67cf6e-8ca0-408f-a2c3-35e66bc7197b")
 		(property "Reference" "#PWR044"
-			(at 27.94 144.78 0)
+			(at 33.02 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17846,7 +17826,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 27.94 143.51 0)
+			(at 31.75 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17855,7 +17835,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 138.43 0)
+			(at 26.67 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17864,7 +17844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 138.43 0)
+			(at 26.67 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17873,7 +17853,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 138.43 0)
+			(at 26.67 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
