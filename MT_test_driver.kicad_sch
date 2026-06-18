@@ -7499,10 +7499,6 @@
 		(uuid "02bb386c-ebe5-476c-96e8-ead4bbd14517")
 	)
 	(no_connect
-		(at 124.46 100.33)
-		(uuid "0766fbe3-7107-4fe5-909f-ba35382542c6")
-	)
-	(no_connect
 		(at 124.46 107.95)
 		(uuid "07b21734-61af-41e4-b9bc-643f45639ffa")
 	)
@@ -7889,6 +7885,16 @@
 			(type default)
 		)
 		(uuid "2167d00f-bf52-44da-a71a-50676643979c")
+	)
+	(wire
+		(pts
+			(xy 115.57 91.44) (xy 115.57 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237dbb19-1d3c-4c49-b874-61d331019a37")
 	)
 	(wire
 		(pts
@@ -8319,6 +8325,16 @@
 			(type default)
 		)
 		(uuid "54c6a109-784e-4d77-82a4-bdba982d08dd")
+	)
+	(wire
+		(pts
+			(xy 116.84 100.33) (xy 115.57 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "562c36cd-00ef-4eb9-a62d-d8990d8baaf6")
 	)
 	(wire
 		(pts
@@ -12121,6 +12137,72 @@
 			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 115.57 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2055ed34-4748-4704-b4fd-e3153f504dcd")
+		(property "Reference" "#PWR063"
+			(at 115.57 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2fabe781-9fe0-40c5-ba49-01024090119d")
+		)
+		(instances
+			(project "MT_test_driver"
+				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -17037,6 +17119,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 120.65 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad35b8b7-ff3e-4a99-9647-9f574084377b")
+		(property "Reference" "D3"
+			(at 119.0625 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 119.0625 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9446b6b3-753f-46dd-b9f7-bb6640c33995")
+		)
+		(pin "1"
+			(uuid "5f77b0b0-cf18-46d3-a3f1-49403f7b66c4")
+		)
+		(instances
+			(project "MT_test_driver"
+				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 20.32 157.48 0)
 		(unit 1)
@@ -17269,6 +17428,73 @@
 			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 115.57 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af64ed8d-6ba5-4a19-8f8c-323e196900d6")
+		(property "Reference" "R15"
+			(at 117.602 96.774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k2"
+			(at 113.03 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 113.792 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aa8c39d-756b-42b5-ab10-589843af07ac")
+		)
+		(pin "2"
+			(uuid "88ac80e2-66b2-4044-9b4f-38761afccd63")
+		)
+		(instances
+			(project "MT_test_driver"
+				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
+					(reference "R15")
 					(unit 1)
 				)
 			)
