@@ -7311,12 +7311,6 @@
 		(uuid "79db99b1-ca68-4db8-a15d-c65ef58094d7")
 	)
 	(junction
-		(at 121.92 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7dcb767f-9d2c-4c60-abe5-ea5beb4a13d6")
-	)
-	(junction
 		(at 81.28 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7453,6 +7447,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec6ea3ed-6643-46f5-80ee-f5b4beb92b18")
+	)
+	(junction
+		(at 123.19 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eddbfccd-03fa-49b1-81e5-05cbf505d8e5")
 	)
 	(junction
 		(at 147.32 39.37)
@@ -7699,16 +7699,6 @@
 			(type default)
 		)
 		(uuid "0445d5cf-1ac9-4fc3-87e0-0d5794b7d789")
-	)
-	(wire
-		(pts
-			(xy 121.92 49.53) (xy 124.46 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07682d66-712f-40be-927e-13f87414e9fb")
 	)
 	(wire
 		(pts
@@ -8692,7 +8682,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 49.53) (xy 121.92 49.53)
+			(xy 119.38 49.53) (xy 123.19 49.53)
 		)
 		(stroke
 			(width 0)
@@ -8929,6 +8919,16 @@
 			(type default)
 		)
 		(uuid "aa6f3f2c-8999-49c4-849a-6271dc299f65")
+	)
+	(wire
+		(pts
+			(xy 123.19 49.53) (xy 124.46 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab1a27c5-0ce5-4274-9125-02ccac62c1b5")
 	)
 	(wire
 		(pts
@@ -15081,15 +15081,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 121.92 49.53 0)
+		(at 123.19 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "835e5b44-64a1-4dad-bf1a-5178b2071155")
-		(property "Reference" "TP12"
-			(at 119.38 44.196 0)
+		(property "Reference" "TP11"
+			(at 120.65 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15098,7 +15098,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 124.46 47.4979 0)
+			(at 125.73 47.4979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15108,7 +15108,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 127 49.53 0)
+			(at 128.27 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15117,7 +15117,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 49.53 0)
+			(at 128.27 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15126,7 +15126,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 121.92 49.53 0)
+			(at 123.19 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15140,7 +15140,7 @@
 		(instances
 			(project "MT_test_driver"
 				(path "/63b7b29e-6d68-4ef7-af6e-6bd9667b85f7"
-					(reference "TP12")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
